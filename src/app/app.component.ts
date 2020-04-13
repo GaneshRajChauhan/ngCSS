@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  toggle = false;
+  showMenu = false;
+  ngOnInit() {
+
+  }
+  onClickMe = () => {
+      this.showMenu = !this.showMenu;
+  }
+
+  toggler = () => {
+      this.toggle = !this.toggle;
+  }
   title = 'ngcss';
 }
